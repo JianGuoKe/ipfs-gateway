@@ -1,0 +1,30 @@
+{
+  "name": "ipfs-gateway",
+  "version": "1.0.0",
+  "description": "ipfs的文件代理服务节点",
+  "main": "app.js",
+  "scripts": {
+    "start": "pm2 startup",
+    "dev": "cross-env PORT 9000 pm2 start app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JianGuoKe/ipfs-gateway.git"
+  },
+  "keywords": [
+    "ipfs",
+    "node",
+    "gateway"
+  ],
+  "author": "jianguoke.cn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JianGuoKe/ipfs-gateway/issues"
+  },
+  "homepage": "https://github.com/JianGuoKe/ipfs-gateway#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "http-proxy": "^1.18.1",
+    "pm2": "^5.2.2"
+  }
+}
