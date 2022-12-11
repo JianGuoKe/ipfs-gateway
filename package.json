@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "pm2 startup",
-    "dev": "cross-env PORT 9000 pm2 start app.js"
+    "dev": "cross-env PORT=9200 node ./app.js",
+    "app": "cross-env PORT=9210 pm2 start app.js"
   },
   "repository": {
     "type": "git",
